@@ -17,9 +17,16 @@ Route::get('/home', function () {
     return view('layouts.admin');
 })->name('home')->middleware('auth');
 
-
-
-
 Auth::routes();
+
+//Paquetes
+Route::resource('paquetes', 'PaqueteController');
+
+//Guias
+Route::resource('guias', 'GuiaController');
+
+//Reservas
+Route::resource('reservas', 'ReservaController');
+
 
 //Route::get('/home', 'HomeController@index')->name('home');

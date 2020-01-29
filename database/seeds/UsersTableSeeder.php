@@ -15,9 +15,8 @@ class UsersTableSeeder extends Seeder
         App\User::create([
             'name'=>'Admin admin admin',
             'email'=>'admin@cuscotours.com',
-            'password'=>bcrypt('123456'),
-            'docIdentidad'=>'123456'
-
+            'password'=>bcrypt('123'),
+            'docIdentidad'=>'12345678'
         ]);
     }
 }
